@@ -3,6 +3,8 @@
 > **Base project (Modules 1–3):** *Music Recommender Simulation* — a content-based scoring engine that ranked songs from an 18-track catalog using a hand-crafted weighted formula across genre, mood, energy, and acousticness. It ran entirely as a CLI tool with no external AI or vector search, using deterministic rules to produce top-k recommendations with plain-text explanations.
 
 ---
+## Demo
+https://www.loom.com/share/5044ef052b3c4bd884503a5b4162ea9b
 
 ## What This Project Does
 
