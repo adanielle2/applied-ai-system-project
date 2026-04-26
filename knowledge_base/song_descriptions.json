@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "description": "Sunrise City opens with a bright, shimmering synth hook that immediately signals a good mood. The production is polished and radio-ready — punchy drums, layered vocals, and a chorus designed to feel triumphant. It sits in the upper half of the energy spectrum without tipping into exhausting intensity. Perfect for a morning commute, a pre-workout pump-up, or any moment that needs a sense of forward motion and optimism."
+  },
+  {
+    "id": 2,
+    "description": "Midnight Coding is a slow-burning lofi beat built for late-night focus sessions. A crackling vinyl texture sits beneath muted piano chords, a brushed snare, and distant rain ambiance. The tempo is unhurried — 78 BPM feels almost like breathing. There is no chorus, no hook demanding attention; the track simply holds a calm, productive atmosphere for as long as you need it. Ideal for studying, writing, or any task that benefits from a quiet sonic background."
+  },
+  {
+    "id": 3,
+    "description": "Storm Runner is built to push you through physical limits. The guitars are distorted and relentless, the kick drum hits like a hammer, and the tempo at 152 BPM makes it almost impossible to stay still. There is a raw, aggressive tension from the first measure through the final crash of cymbals. This is not background music — it demands your full energy and gives it back doubled. Best suited for intense workouts, competitive gaming, or any situation where you need to feel unstoppable."
+  },
+  {
+    "id": 4,
+    "description": "Library Rain creates the sensation of sitting beside a window on a wet afternoon, surrounded by books and warm light. The acoustic guitar fingerpicking is gentle and deliberate, layered with soft piano and the faint sound of rain on glass. At 0.86 acousticness it is one of the most organic-sounding tracks in the catalog — no digital production polish, just natural warmth. The track asks nothing of you and rewards patience. Excellent for deep reading, journaling, or unwinding after a long day."
+  },
+  {
+    "id": 5,
+    "description": "Gym Hero is pure kinetic energy. The bass hits hard, the build-and-drop structure is engineered to hit right as fatigue sets in, and the tempo at 132 BPM keeps pace with a strong running stride. High danceability (0.88) means the groove is impossible to ignore — your body responds before your mind decides. There is an intense, almost competitive urgency to the track. Best used during HIIT sessions, sports warmups, or any workout where you are racing against your own previous performance."
+  },
+  {
+    "id": 6,
+    "description": "Spacewalk Thoughts sounds exactly like its name: slow, weightless, and vast. Soft pads drift in long, evolving waves while sparse melodic motifs float through the stereo field. The acousticness rating of 0.92 reflects how organic and unprocessed the sound sources feel, even though the track is electronic at heart. At 60 BPM it is one of the slowest in the catalog — it does not move so much as expand. Perfect for meditation, visualization, creative brainstorming, or simply letting your mind wander without pressure."
+  },
+  {
+    "id": 7,
+    "description": "Coffee Shop Stories captures a Sunday morning at a quiet neighborhood cafe. The upright bass walks a steady groove, brushed cymbals shimmer, and a muted trumpet weaves a melody that feels both improvised and inevitable. The acoustic warmth (0.89) comes from live instruments recorded with just enough room ambiance to feel present without being distracting. This is jazz for people who say they do not like jazz — it is approachable, warm, and completely unhurried. Works beautifully as background music for conversation, reading, or leisurely cooking."
+  },
+  {
+    "id": 8,
+    "description": "Night Drive Loop sounds like a city seen through rain-streaked glass at 2 AM. The synthwave aesthetic — gated reverb, bright arpeggiated leads, a four-on-the-floor kick — creates a sense of nostalgic retrofuturism. The mood is moody rather than dark: there is melancholy, but also a strange kind of freedom in the nighttime atmosphere. At 0.75 energy it has enough drive to feel propulsive without demanding your full attention. Works well for late-night commutes, creative work with a cinematic quality, or simply setting a mood."
+  },
+  {
+    "id": 9,
+    "description": "Focus Flow is engineered for sustained cognitive work. The BPM sits at 80 — quick enough to feel alert, slow enough not to intrude. Lofi hallmarks are present: muffled highs, a slightly off-pitch sample, gentle background texture. Unlike some lofi tracks that feel sleepy, Focus Flow has a subtle rhythmic urgency that keeps your brain engaged without tipping into distraction. Extremely high acousticness (0.78) keeps the sound natural and non-fatiguing over long sessions. Designed for coding, writing, studying, or any flow-state activity."
+  },
+  {
+    "id": 10,
+    "description": "Rooftop Lights is the soundtrack to a rooftop gathering with good friends just after sunset. The indie pop production layers acoustic guitar with clean electric, a tight drum groove, and harmonized vocals that feel earnest rather than polished. High valence (0.81) and danceability (0.82) mean it trends happy and groovy without feeling shallow. The energy sits comfortably in the upper-mid range — present but not overwhelming. Perfect for social gatherings, cooking with company, or a feel-good playlist where everyone can agree."
+  },
+  {
+    "id": 11,
+    "description": "City Cipher opens with a chopped sample and a rolling hi-hat pattern that immediately establishes a confident, urban energy. The verses are dense with wordplay, and the beat flips between tight trap percussion and old-school boom-bap sensibility. High danceability (0.91) makes it work equally well as workout music or party music. The flow never lets up, but there is space in the production — the low end breathes, the snare has snap, and the whole track feels deliberately constructed. Good for runs, commutes, or any time you want music that matches an ambitious state of mind."
+  },
+  {
+    "id": 12,
+    "description": "Moonlight Reimagined is a solo piano piece that leans into silence as much as sound. Recorded with close-miked acoustics that capture every key press and pedal breath, the track feels deeply intimate. The tempo at 52 BPM — one of the slowest in the catalog — and melancholic valence (0.38) make this music for emotional processing rather than entertainment. Acousticness at 0.97 means you are as close to an unmediated acoustic performance as digital audio allows. Best for quiet evenings, grief processing, or any reflective moment that deserves space."
+  },
+  {
+    "id": 13,
+    "description": "Velvet Hour is the smoothest track in the catalog. R&B production at a mid-tempo 86 BPM layers warm Rhodes keys, a walking bass, and silky vocals that feel like a conversation rather than a performance. The romantic mood (valence 0.76, danceability 0.80) strikes a balance between feel-good and sentimental — it works for a candlelit dinner, a slow dance, or background music for a meaningful evening. Neither too acoustic nor too produced, it sits right in the middle and flatters whatever mood surrounds it."
+  },
+  {
+    "id": 14,
+    "description": "Iron Storm does not ease you in. From the first downstroke the track is maximum intensity: double-kick drumming at 168 BPM, down-tuned guitars layered until they form a wall, and vocals that sound like controlled rage. At energy 0.97 it is the highest-energy track in the catalog by a significant margin. Acousticness of 0.04 means everything is processed, compressed, and amplified to its limit. This is music for people who need to externalize extreme emotion or push through a physical barrier. Not for background listening — demands full commitment."
+  },
+  {
+    "id": 15,
+    "description": "Porch Light feels like a letter written to someone you miss. Fingerpicked acoustic guitar, a warm banjo line, and a voice that sounds unhurried and honest create a sense of place — a summer evening on a wooden porch, the sky going pink. Acousticness at 0.94 reflects the entirely acoustic instrument palette, and the nostalgic mood (valence 0.63) sits in that bittersweet space between happy and sad. The tempo at 68 BPM is relaxed without being sleepy. Perfect for reflective listening, autumn drives, or any moment that calls for sincerity over style."
+  },
+  {
+    "id": 16,
+    "description": "Drop Zone is pure euphoria. The build is meticulous — four minutes of rising tension, layered synths, and a filtered kick that climbs until the drop hits like a physical impact. At energy 0.96 and danceability 0.95 it is one of the most physically demanding tracks to listen to passively — your body wants to move. The euphoric mood (valence 0.88) keeps the intensity from feeling aggressive: this is joy at maximum volume, not anger. Best used for dancing, festival replays, or workout finishes where you need one last surge."
+  },
+  {
+    "id": 17,
+    "description": "Crossroads Lament is slow, heavy, and honest. A single electric guitar — slightly overdriven, full of bend and vibrato — carries most of the emotional weight, with a brushed snare and walking bass providing minimal support. The sadness (valence 0.28) is not dramatic or theatrical; it settles in quietly and stays. High acousticness (0.82) makes the instrumental imperfections — finger squeak, pick attack, string buzz — audible, which is the point. This music does not try to fix anything. Best for sitting with difficult feelings, late-night solitude, or honoring something that is gone."
+  },
+  {
+    "id": 18,
+    "description": "Island Breeze is the most relaxed track in the catalog. The reggae rhythm guitar skips on the off-beat, a melodica line carries a sun-warmed melody, and the whole mix sounds like it was recorded outdoors. At 85 BPM and laid-back mood it is unhurried to the point of seeming timeless. High valence (0.79) keeps it from feeling sleepy — there is genuine warmth and happiness in the groove, just without any urgency. Works perfectly for beach playlists, cooking, weekend mornings, or any time you want music that makes a ordinary moment feel like a vacation."
+  }
+]
