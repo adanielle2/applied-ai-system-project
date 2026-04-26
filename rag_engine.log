@@ -1,0 +1,209 @@
+2026-04-26 00:11:03,327 | INFO     | Initializing RAG engine...
+2026-04-26 00:11:03,328 | INFO     | Loaded 18 songs from data/songs.csv
+2026-04-26 00:11:03,329 | INFO     | Loaded 18 song descriptions
+2026-04-26 00:51:51,835 | INFO     | Initializing RAG engine...
+2026-04-26 00:51:51,838 | INFO     | Loaded 18 songs from data/songs.csv
+2026-04-26 00:51:51,839 | INFO     | Loaded 18 song descriptions
+2026-04-26 00:51:51,839 | INFO     | Loading embedding model: all-MiniLM-L6-v2...
+2026-04-26 00:52:09,696 | INFO     | Embedding model loaded
+2026-04-26 00:53:59,391 | INFO     | Initializing RAG engine...
+2026-04-26 00:53:59,394 | INFO     | Loaded 18 songs from data/songs.csv
+2026-04-26 00:53:59,398 | INFO     | Loaded 18 song descriptions
+2026-04-26 00:53:59,398 | INFO     | Loading embedding model: all-MiniLM-L6-v2...
+2026-04-26 00:54:01,336 | INFO     | Embedding model loaded
+2026-04-26 00:54:02,547 | INFO     | Vector store built: 18 songs indexed
+2026-04-26 00:54:02,548 | WARNING  | No OPENAI_API_KEY found. LLM features disabled — will fall back to score-based ranking with RAG retrieval.
+2026-04-26 00:54:16,173 | INFO     | Initializing RAG engine...
+2026-04-26 00:54:16,174 | INFO     | Loaded 18 songs from data/songs.csv
+2026-04-26 00:54:16,175 | INFO     | Loaded 18 song descriptions
+2026-04-26 00:54:16,175 | INFO     | Loading embedding model: all-MiniLM-L6-v2...
+2026-04-26 00:54:18,026 | INFO     | Embedding model loaded
+2026-04-26 00:54:19,166 | INFO     | Vector store built: 18 songs indexed
+2026-04-26 00:54:19,167 | WARNING  | No OPENAI_API_KEY found. LLM features disabled — will fall back to score-based ranking with RAG retrieval.
+2026-04-26 00:56:51,567 | INFO     | ============================================================
+2026-04-26 00:56:51,569 | INFO     | New recommendation request: k=3, prefs={'genre': 'lofi', 'mood': 'chill', 'energy': 0.38, 'likes_acoustic': True}
+2026-04-26 00:56:51,569 | INFO     | Free text: something calm for studying late at night
+2026-04-26 00:56:51,569 | DEBUG    | Built query: something calm for studying late at night. lofi music. chill mood. moderate energy balanced. acoustic organic natural instruments
+2026-04-26 00:56:51,569 | INFO     | Retrieving top 10 songs for query: something calm for studying late at night. lofi music. chill mood. moderate ener...
+2026-04-26 00:56:51,650 | INFO     | Retrieved 10 songs
+2026-04-26 00:56:51,650 | DEBUG    |   - Midnight Coding (distance: 0.3893)
+2026-04-26 00:56:51,650 | DEBUG    |   - Focus Flow (distance: 0.4548)
+2026-04-26 00:56:51,650 | DEBUG    |   - Library Rain (distance: 0.4683)
+2026-04-26 00:56:51,650 | DEBUG    |   - Island Breeze (distance: 0.4757)
+2026-04-26 00:56:51,650 | DEBUG    |   - Night Drive Loop (distance: 0.4784)
+2026-04-26 00:56:51,650 | DEBUG    |   - Porch Light (distance: 0.5020)
+2026-04-26 00:56:51,650 | DEBUG    |   - Moonlight Reimagined (distance: 0.5283)
+2026-04-26 00:56:51,651 | DEBUG    |   - Velvet Hour (distance: 0.5307)
+2026-04-26 00:56:51,651 | DEBUG    |   - Coffee Shop Stories (distance: 0.5375)
+2026-04-26 00:56:51,651 | DEBUG    |   - Iron Storm (distance: 0.5519)
+2026-04-26 00:56:51,651 | INFO     | Using fallback scoring (original algorithm) on retrieved songs
+2026-04-26 00:56:51,651 | DEBUG    | Built query: something calm for studying late at night. lofi music. chill mood. moderate energy balanced. acoustic organic natural instruments
+2026-04-26 00:56:51,651 | INFO     | Returning 3 recommendations via rag_fallback
+2026-04-26 00:57:24,738 | INFO     | ============================================================
+2026-04-26 00:57:24,738 | INFO     | New recommendation request: k=3, prefs={'genre': 'lofi', 'mood': 'chill', 'energy': 0.38, 'likes_acoustic': True}
+2026-04-26 00:57:24,738 | INFO     | Free text: something calm for studying late at night
+2026-04-26 00:57:24,738 | DEBUG    | Built query: something calm for studying late at night. lofi music. chill mood. moderate energy balanced. acoustic organic natural instruments
+2026-04-26 00:57:24,738 | INFO     | Retrieving top 10 songs for query: something calm for studying late at night. lofi music. chill mood. moderate ener...
+2026-04-26 00:57:24,763 | INFO     | Retrieved 10 songs
+2026-04-26 00:57:24,763 | DEBUG    |   - Midnight Coding (distance: 0.3893)
+2026-04-26 00:57:24,764 | DEBUG    |   - Focus Flow (distance: 0.4548)
+2026-04-26 00:57:24,764 | DEBUG    |   - Library Rain (distance: 0.4683)
+2026-04-26 00:57:24,764 | DEBUG    |   - Island Breeze (distance: 0.4757)
+2026-04-26 00:57:24,764 | DEBUG    |   - Night Drive Loop (distance: 0.4784)
+2026-04-26 00:57:24,764 | DEBUG    |   - Porch Light (distance: 0.5020)
+2026-04-26 00:57:24,764 | DEBUG    |   - Moonlight Reimagined (distance: 0.5283)
+2026-04-26 00:57:24,764 | DEBUG    |   - Velvet Hour (distance: 0.5307)
+2026-04-26 00:57:24,764 | DEBUG    |   - Coffee Shop Stories (distance: 0.5375)
+2026-04-26 00:57:24,764 | DEBUG    |   - Iron Storm (distance: 0.5519)
+2026-04-26 00:57:24,764 | INFO     | Using fallback scoring (original algorithm) on retrieved songs
+2026-04-26 00:57:24,765 | DEBUG    | Built query: something calm for studying late at night. lofi music. chill mood. moderate energy balanced. acoustic organic natural instruments
+2026-04-26 00:57:24,765 | INFO     | Returning 3 recommendations via rag_fallback
+2026-04-26 00:58:10,170 | INFO     | ============================================================
+2026-04-26 00:58:10,171 | INFO     | New recommendation request: k=3, prefs={'genre': 'pop', 'mood': 'intense', 'energy': 0.93, 'likes_acoustic': False}
+2026-04-26 00:58:10,171 | DEBUG    | Built query: pop music. intense mood. high energy intense upbeat. electronic produced synthetic
+2026-04-26 00:58:10,171 | INFO     | Retrieving top 10 songs for query: pop music. intense mood. high energy intense upbeat. electronic produced synthet...
+2026-04-26 00:58:10,194 | INFO     | Retrieved 10 songs
+2026-04-26 00:58:10,211 | DEBUG    |   - Night Drive Loop (distance: 0.4789)
+2026-04-26 00:58:10,211 | DEBUG    |   - Rooftop Lights (distance: 0.4794)
+2026-04-26 00:58:10,211 | DEBUG    |   - Sunrise City (distance: 0.4880)
+2026-04-26 00:58:10,211 | DEBUG    |   - Spacewalk Thoughts (distance: 0.5136)
+2026-04-26 00:58:10,212 | DEBUG    |   - Iron Storm (distance: 0.5196)
+2026-04-26 00:58:10,212 | DEBUG    |   - Drop Zone (distance: 0.5264)
+2026-04-26 00:58:10,212 | DEBUG    |   - Focus Flow (distance: 0.5434)
+2026-04-26 00:58:10,212 | DEBUG    |   - Porch Light (distance: 0.5450)
+2026-04-26 00:58:10,212 | DEBUG    |   - Velvet Hour (distance: 0.5506)
+2026-04-26 00:58:10,212 | DEBUG    |   - Gym Hero (distance: 0.5605)
+2026-04-26 00:58:10,212 | INFO     | Using fallback scoring (original algorithm) on retrieved songs
+2026-04-26 00:58:10,213 | DEBUG    | Built query: pop music. intense mood. high energy intense upbeat. electronic produced synthetic
+2026-04-26 00:58:10,213 | INFO     | Returning 3 recommendations via rag_fallback
+2026-04-26 00:58:28,087 | INFO     | ============================================================
+2026-04-26 00:58:28,087 | INFO     | New recommendation request: k=3, prefs={'genre': '', 'mood': '', 'energy': 0.25, 'likes_acoustic': None}
+2026-04-26 00:58:28,087 | INFO     | Free text: something melancholic and quiet for a rainy afternoon
+2026-04-26 00:58:28,087 | DEBUG    | Built query: something melancholic and quiet for a rainy afternoon. calm low energy peaceful quiet
+2026-04-26 00:58:28,087 | INFO     | Retrieving top 10 songs for query: something melancholic and quiet for a rainy afternoon. calm low energy peaceful ...
+2026-04-26 00:58:28,113 | INFO     | Retrieved 10 songs
+2026-04-26 00:58:28,128 | DEBUG    |   - Library Rain (distance: 0.4674)
+2026-04-26 00:58:28,128 | DEBUG    |   - Porch Light (distance: 0.5375)
+2026-04-26 00:58:28,128 | DEBUG    |   - Coffee Shop Stories (distance: 0.5410)
+2026-04-26 00:58:28,128 | DEBUG    |   - Night Drive Loop (distance: 0.5807)
+2026-04-26 00:58:28,128 | DEBUG    |   - Midnight Coding (distance: 0.5859)
+2026-04-26 00:58:28,128 | DEBUG    |   - Moonlight Reimagined (distance: 0.5947)
+2026-04-26 00:58:28,128 | DEBUG    |   - Island Breeze (distance: 0.6124)
+2026-04-26 00:58:28,128 | DEBUG    |   - Sunrise City (distance: 0.6184)
+2026-04-26 00:58:28,128 | DEBUG    |   - Velvet Hour (distance: 0.6257)
+2026-04-26 00:58:28,128 | DEBUG    |   - Rooftop Lights (distance: 0.6421)
+2026-04-26 00:58:28,129 | INFO     | Using fallback scoring (original algorithm) on retrieved songs
+2026-04-26 00:58:28,129 | DEBUG    | Built query: something melancholic and quiet for a rainy afternoon. calm low energy peaceful quiet
+2026-04-26 00:58:28,129 | INFO     | Returning 3 recommendations via rag_fallback
+2026-04-26 01:01:24,655 | INFO     | ============================================================
+2026-04-26 01:01:24,658 | INFO     | New recommendation request: k=3, prefs={'genre': 'lofi', 'mood': 'chill', 'energy': 0.38, 'likes_acoustic': True}
+2026-04-26 01:01:24,658 | INFO     | Free text: something calm for studying late at night
+2026-04-26 01:01:24,659 | DEBUG    | Built query: something calm for studying late at night. lofi music. chill mood. moderate energy balanced. acoustic organic natural instruments
+2026-04-26 01:01:24,660 | INFO     | Retrieving top 10 songs for query: something calm for studying late at night. lofi music. chill mood. moderate ener...
+2026-04-26 01:01:24,733 | INFO     | Retrieved 10 songs
+2026-04-26 01:01:24,733 | DEBUG    |   - Midnight Coding (distance: 0.3893)
+2026-04-26 01:01:24,734 | DEBUG    |   - Focus Flow (distance: 0.4548)
+2026-04-26 01:01:24,734 | DEBUG    |   - Library Rain (distance: 0.4683)
+2026-04-26 01:01:24,734 | DEBUG    |   - Island Breeze (distance: 0.4757)
+2026-04-26 01:01:24,734 | DEBUG    |   - Night Drive Loop (distance: 0.4784)
+2026-04-26 01:01:24,734 | DEBUG    |   - Porch Light (distance: 0.5020)
+2026-04-26 01:01:24,734 | DEBUG    |   - Moonlight Reimagined (distance: 0.5283)
+2026-04-26 01:01:24,734 | DEBUG    |   - Velvet Hour (distance: 0.5307)
+2026-04-26 01:01:24,734 | DEBUG    |   - Coffee Shop Stories (distance: 0.5375)
+2026-04-26 01:01:24,734 | DEBUG    |   - Iron Storm (distance: 0.5519)
+2026-04-26 01:01:24,734 | INFO     | Using fallback scoring (original algorithm) on retrieved songs
+2026-04-26 01:01:24,735 | DEBUG    | Built query: something calm for studying late at night. lofi music. chill mood. moderate energy balanced. acoustic organic natural instruments
+2026-04-26 01:01:24,735 | INFO     | Returning 3 recommendations via rag_fallback
+2026-04-26 01:01:37,800 | INFO     | ============================================================
+2026-04-26 01:01:37,801 | INFO     | New recommendation request: k=3, prefs={'genre': 'pop', 'mood': 'intense', 'energy': 0.93, 'likes_acoustic': False}
+2026-04-26 01:01:37,801 | DEBUG    | Built query: pop music. intense mood. high energy intense upbeat. electronic produced synthetic
+2026-04-26 01:01:37,801 | INFO     | Retrieving top 10 songs for query: pop music. intense mood. high energy intense upbeat. electronic produced synthet...
+2026-04-26 01:01:37,828 | INFO     | Retrieved 10 songs
+2026-04-26 01:01:37,828 | DEBUG    |   - Night Drive Loop (distance: 0.4789)
+2026-04-26 01:01:37,828 | DEBUG    |   - Rooftop Lights (distance: 0.4794)
+2026-04-26 01:01:37,828 | DEBUG    |   - Sunrise City (distance: 0.4880)
+2026-04-26 01:01:37,829 | DEBUG    |   - Spacewalk Thoughts (distance: 0.5136)
+2026-04-26 01:01:37,829 | DEBUG    |   - Iron Storm (distance: 0.5196)
+2026-04-26 01:01:37,829 | DEBUG    |   - Drop Zone (distance: 0.5264)
+2026-04-26 01:01:37,849 | DEBUG    |   - Focus Flow (distance: 0.5434)
+2026-04-26 01:01:37,849 | DEBUG    |   - Porch Light (distance: 0.5450)
+2026-04-26 01:01:37,849 | DEBUG    |   - Velvet Hour (distance: 0.5506)
+2026-04-26 01:01:37,849 | DEBUG    |   - Gym Hero (distance: 0.5605)
+2026-04-26 01:01:37,849 | INFO     | Using fallback scoring (original algorithm) on retrieved songs
+2026-04-26 01:01:37,849 | DEBUG    | Built query: pop music. intense mood. high energy intense upbeat. electronic produced synthetic
+2026-04-26 01:01:37,849 | INFO     | Returning 3 recommendations via rag_fallback
+2026-04-26 01:01:48,844 | INFO     | ============================================================
+2026-04-26 01:01:48,845 | INFO     | New recommendation request: k=3, prefs={'genre': '', 'mood': '', 'energy': 0.25, 'likes_acoustic': None}
+2026-04-26 01:01:48,845 | INFO     | Free text: something melancholic and quiet for a rainy afternoon
+2026-04-26 01:01:48,845 | DEBUG    | Built query: something melancholic and quiet for a rainy afternoon. calm low energy peaceful quiet
+2026-04-26 01:01:48,845 | INFO     | Retrieving top 10 songs for query: something melancholic and quiet for a rainy afternoon. calm low energy peaceful ...
+2026-04-26 01:01:48,891 | INFO     | Retrieved 10 songs
+2026-04-26 01:01:48,891 | DEBUG    |   - Library Rain (distance: 0.4674)
+2026-04-26 01:01:48,891 | DEBUG    |   - Porch Light (distance: 0.5375)
+2026-04-26 01:01:48,891 | DEBUG    |   - Coffee Shop Stories (distance: 0.5410)
+2026-04-26 01:01:48,891 | DEBUG    |   - Night Drive Loop (distance: 0.5807)
+2026-04-26 01:01:48,891 | DEBUG    |   - Midnight Coding (distance: 0.5859)
+2026-04-26 01:01:48,891 | DEBUG    |   - Moonlight Reimagined (distance: 0.5947)
+2026-04-26 01:01:48,892 | DEBUG    |   - Island Breeze (distance: 0.6124)
+2026-04-26 01:01:48,892 | DEBUG    |   - Sunrise City (distance: 0.6184)
+2026-04-26 01:01:48,892 | DEBUG    |   - Velvet Hour (distance: 0.6257)
+2026-04-26 01:01:48,892 | DEBUG    |   - Rooftop Lights (distance: 0.6421)
+2026-04-26 01:01:48,892 | INFO     | Using fallback scoring (original algorithm) on retrieved songs
+2026-04-26 01:01:48,892 | DEBUG    | Built query: something melancholic and quiet for a rainy afternoon. calm low energy peaceful quiet
+2026-04-26 01:01:48,892 | INFO     | Returning 3 recommendations via rag_fallback
+2026-04-26 01:24:06,783 | INFO     | ============================================================
+2026-04-26 01:24:06,787 | INFO     | New recommendation request: k=3, prefs={'genre': 'lofi', 'mood': 'chill', 'energy': 0.38, 'likes_acoustic': True}
+2026-04-26 01:24:06,788 | INFO     | Free text: something calm for studying late at night
+2026-04-26 01:24:06,788 | DEBUG    | Built query: something calm for studying late at night. lofi music. chill mood. moderate energy balanced. acoustic organic natural instruments
+2026-04-26 01:24:06,788 | INFO     | Retrieving top 10 songs for query: something calm for studying late at night. lofi music. chill mood. moderate ener...
+2026-04-26 01:24:07,160 | INFO     | Retrieved 10 songs
+2026-04-26 01:24:07,160 | DEBUG    |   - Midnight Coding (distance: 0.3893)
+2026-04-26 01:24:07,160 | DEBUG    |   - Focus Flow (distance: 0.4548)
+2026-04-26 01:24:07,160 | DEBUG    |   - Library Rain (distance: 0.4683)
+2026-04-26 01:24:07,160 | DEBUG    |   - Island Breeze (distance: 0.4757)
+2026-04-26 01:24:07,160 | DEBUG    |   - Night Drive Loop (distance: 0.4784)
+2026-04-26 01:24:07,160 | DEBUG    |   - Porch Light (distance: 0.5020)
+2026-04-26 01:24:07,160 | DEBUG    |   - Moonlight Reimagined (distance: 0.5283)
+2026-04-26 01:24:07,161 | DEBUG    |   - Velvet Hour (distance: 0.5307)
+2026-04-26 01:24:07,161 | DEBUG    |   - Coffee Shop Stories (distance: 0.5375)
+2026-04-26 01:24:07,161 | DEBUG    |   - Iron Storm (distance: 0.5519)
+2026-04-26 01:24:07,161 | INFO     | Using fallback scoring (original algorithm) on retrieved songs
+2026-04-26 01:24:07,161 | DEBUG    | Built query: something calm for studying late at night. lofi music. chill mood. moderate energy balanced. acoustic organic natural instruments
+2026-04-26 01:24:07,161 | INFO     | Returning 3 recommendations via rag_fallback
+2026-04-26 01:24:48,063 | INFO     | ============================================================
+2026-04-26 01:24:48,063 | INFO     | New recommendation request: k=3, prefs={'genre': 'pop', 'mood': 'intense', 'energy': 0.93, 'likes_acoustic': False}
+2026-04-26 01:24:48,063 | DEBUG    | Built query: pop music. intense mood. high energy intense upbeat. electronic produced synthetic
+2026-04-26 01:24:48,063 | INFO     | Retrieving top 10 songs for query: pop music. intense mood. high energy intense upbeat. electronic produced synthet...
+2026-04-26 01:24:48,135 | INFO     | Retrieved 10 songs
+2026-04-26 01:24:48,142 | DEBUG    |   - Night Drive Loop (distance: 0.4789)
+2026-04-26 01:24:48,142 | DEBUG    |   - Rooftop Lights (distance: 0.4794)
+2026-04-26 01:24:48,142 | DEBUG    |   - Sunrise City (distance: 0.4880)
+2026-04-26 01:24:48,142 | DEBUG    |   - Spacewalk Thoughts (distance: 0.5136)
+2026-04-26 01:24:48,142 | DEBUG    |   - Iron Storm (distance: 0.5196)
+2026-04-26 01:24:48,142 | DEBUG    |   - Drop Zone (distance: 0.5264)
+2026-04-26 01:24:48,142 | DEBUG    |   - Focus Flow (distance: 0.5434)
+2026-04-26 01:24:48,142 | DEBUG    |   - Porch Light (distance: 0.5450)
+2026-04-26 01:24:48,143 | DEBUG    |   - Velvet Hour (distance: 0.5506)
+2026-04-26 01:24:48,143 | DEBUG    |   - Gym Hero (distance: 0.5605)
+2026-04-26 01:24:48,143 | INFO     | Using fallback scoring (original algorithm) on retrieved songs
+2026-04-26 01:24:48,143 | DEBUG    | Built query: pop music. intense mood. high energy intense upbeat. electronic produced synthetic
+2026-04-26 01:24:48,143 | INFO     | Returning 3 recommendations via rag_fallback
+2026-04-26 01:25:48,569 | INFO     | ============================================================
+2026-04-26 01:25:48,570 | INFO     | New recommendation request: k=3, prefs={'genre': '', 'mood': '', 'energy': 0.93, 'likes_acoustic': None}
+2026-04-26 01:25:48,570 | INFO     | Free text: something melancholic and quiet for a rainy afternoon
+2026-04-26 01:25:48,570 | DEBUG    | Built query: something melancholic and quiet for a rainy afternoon. high energy intense upbeat
+2026-04-26 01:25:48,570 | INFO     | Retrieving top 10 songs for query: something melancholic and quiet for a rainy afternoon. high energy intense upbea...
+2026-04-26 01:25:48,633 | INFO     | Retrieved 10 songs
+2026-04-26 01:25:48,634 | DEBUG    |   - Library Rain (distance: 0.3995)
+2026-04-26 01:25:48,634 | DEBUG    |   - Porch Light (distance: 0.4666)
+2026-04-26 01:25:48,634 | DEBUG    |   - Night Drive Loop (distance: 0.4893)
+2026-04-26 01:25:48,634 | DEBUG    |   - Coffee Shop Stories (distance: 0.4915)
+2026-04-26 01:25:48,634 | DEBUG    |   - Midnight Coding (distance: 0.4965)
+2026-04-26 01:25:48,634 | DEBUG    |   - Sunrise City (distance: 0.4970)
+2026-04-26 01:25:48,634 | DEBUG    |   - Rooftop Lights (distance: 0.4973)
+2026-04-26 01:25:48,634 | DEBUG    |   - Velvet Hour (distance: 0.5180)
+2026-04-26 01:25:48,634 | DEBUG    |   - Island Breeze (distance: 0.5259)
+2026-04-26 01:25:48,634 | DEBUG    |   - Iron Storm (distance: 0.5603)
+2026-04-26 01:25:48,634 | INFO     | Using fallback scoring (original algorithm) on retrieved songs
+2026-04-26 01:25:48,634 | DEBUG    | Built query: something melancholic and quiet for a rainy afternoon. high energy intense upbeat
+2026-04-26 01:25:48,634 | INFO     | Returning 3 recommendations via rag_fallback

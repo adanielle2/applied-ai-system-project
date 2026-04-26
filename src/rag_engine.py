@@ -18,8 +18,8 @@ import os
 from typing import Dict, List, Optional, Tuple
 
 import chromadb
-from chromadb.utils import embedding_functions
 from openai import OpenAI
+from sentence_transformers import SentenceTransformer
 
 from .recommender import load_songs, score_song
 
@@ -72,11 +72,14 @@ class RAGEngine:
         self.descriptions = self._load_descriptions(descriptions_path)
         logger.info(f"Loaded {len(self.descriptions)} song descriptions")
 
-        # Initialize embedding function
-        self.embed_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
-            model_name=EMBEDDING_MODEL
-        )
-        logger.info(f"Embedding model: {EMBEDDING_MODEL}")
+        # Initialize embedding model directly (bypasses chromadb's import check
+        # which fails when tensorflow's broken numpy dependency is present)
+        logger.info(f"Loading embedding model: {EMBEDDING_MODEL}...")
+        self._st_model = SentenceTransformer(EMBEDDING_MODEL)
+        self.embed_fn = lambda texts: self._st_model.encode(
+            texts, convert_to_numpy=False, convert_to_tensor=True
+        ).tolist()
+        logger.info(f"Embedding model loaded")
 
         # Initialize ChromaDB (persistent local storage)
         self.chroma_client = chromadb.Client()
@@ -128,7 +131,6 @@ class RAGEngine:
 
         self.collection = self.chroma_client.create_collection(
             name=COLLECTION_NAME,
-            embedding_function=self.embed_fn,
             metadata={"hnsw:space": "cosine"},
         )
 
@@ -160,7 +162,8 @@ class RAGEngine:
             })
             ids.append(str(song["id"]))
 
-        self.collection.add(documents=documents, metadatas=metadatas, ids=ids)
+        embeddings = self.embed_fn(documents)
+        self.collection.add(documents=documents, embeddings=embeddings, metadatas=metadatas, ids=ids)
         logger.info(f"Vector store built: {len(documents)} songs indexed")
 
     # ── Query Building ─────────────────────────────────────────────────────────
@@ -216,8 +219,9 @@ class RAGEngine:
         logger.info(f"Retrieving top {n_results} songs for query: {query[:80]}...")
 
         try:
+            query_embedding = self.embed_fn([query])
             results = self.collection.query(
-                query_texts=[query],
+                query_embeddings=query_embedding,
                 n_results=min(n_results, len(self.songs)),
             )
         except Exception as e:
