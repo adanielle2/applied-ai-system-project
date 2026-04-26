@@ -39,12 +39,45 @@ class Recommender:
         self.songs = songs
 
     def recommend(self, user: UserProfile, k: int = 5) -> List[Song]:
-        # TODO: Implement recommendation logic
-        return self.songs[:k]
+        """Score every song against the user profile and return the top k."""
+        prefs = {
+            "genre": user.favorite_genre,
+            "mood": user.favorite_mood,
+            "energy": user.target_energy,
+            "likes_acoustic": user.likes_acoustic,
+        }
+        scored: List[Tuple[Song, float]] = []
+        for song in self.songs:
+            song_dict = {
+                "id": song.id,
+                "genre": song.genre,
+                "mood": song.mood,
+                "energy": song.energy,
+                "acousticness": song.acousticness,
+            }
+            total_score, _ = score_song(prefs, song_dict)
+            scored.append((song, total_score))
+
+        scored.sort(key=lambda x: (-x[1], x[0].id))
+        return [s for s, _ in scored[:k]]
 
     def explain_recommendation(self, user: UserProfile, song: Song) -> str:
-        # TODO: Implement explanation logic
-        return "Explanation placeholder"
+        """Return a human-readable explanation of why this song fits the user."""
+        prefs = {
+            "genre": user.favorite_genre,
+            "mood": user.favorite_mood,
+            "energy": user.target_energy,
+            "likes_acoustic": user.likes_acoustic,
+        }
+        song_dict = {
+            "id": song.id,
+            "genre": song.genre,
+            "mood": song.mood,
+            "energy": song.energy,
+            "acousticness": song.acousticness,
+        }
+        _, reasons = score_song(prefs, song_dict)
+        return " | ".join(reasons) if reasons else "No matching signals found."
 
 def load_songs(csv_path: str) -> List[Dict]:
     """Read songs.csv and return a list of dicts with typed fields."""
